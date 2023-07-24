@@ -1,0 +1,58 @@
+.cta {
+	padding: 180px 0;
+	background: linear-gradient(0deg, #242B33 11.98%, rgba(36, 43, 51, 0.9) 51.04%, #242B33 92.19%),
+	 url("./../img/cta/cta_bg.jpg");
+}
+
+.cta__title {
+	margin-bottom: 17px;
+}
+
+.cta__wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 30px;
+}
+.form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 35px 30px;
+
+}
+.form__input {
+	transition: 0.2s background-color ease-in;
+	padding: 12px 12px;
+	height: 50px;
+	text-align: center;
+	background-color: rgba(255, 255, 255,  0.2);
+	color: $white;
+	font-size: 14px;
+	
+
+	&::placeholder{
+		color: #bebebe;
+	}
+	&:focus{
+		background-color: rgba(255, 255, 255,  0.35);
+
+	}
+}
+.form__privacy {
+	font-size: 13px;
+	color: #e7e7e7;
+	line-height: 1.23;
+}
+.form__button {
+	height: 50px;
+	color: $white;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	padding: 12px 12px;
+	background-color: $accent;
+	transition: 0.2s background-color ease-in;
+
+	&:hover{
+		background-color: saturate($accent, 20%);
+	}
+}

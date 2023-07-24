@@ -1,0 +1,25 @@
+.appartments {
+	position: relative;
+}
+.appartments::after{
+	content: "III";
+	position: absolute;
+	
+	top: -20px;
+	left: calc(50% - 700px) ;
+	line-height: 1.15;
+	font-size: 400px;
+	opacity: 0.04;
+	font-family: $font-accent;
+}
+
+
+.title-2 {
+	font-family: $font-accent;
+	font-size: 2.25rem;
+	color: $accent;
+	font-weight: bold;
+	margin-bottom: 90px;
+}
+.appartments__cards {
+}

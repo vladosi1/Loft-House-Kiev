@@ -1,0 +1,49 @@
+.footer{
+	padding-top: 5.25rem;
+	padding-bottom: 3.75rem;
+	background: #2D343C;
+}
+
+.footer__box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+
+}
+.footer__item {
+	position: relative;
+	margin-right: 50px;
+	&:last-child{
+		margin-right: 0;
+	}
+}
+.footer__item li {
+	margin-top: 1rem;
+}
+.footer__item li, p {
+	letter-spacing: 0.03em;
+}
+.tel {
+}
+.footer__social{
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 15px;
+}
+.footer__social a {
+	margin-right: 15px;
+}
+.icon{
+	transition: fill 0.2s ease;
+}
+.icon:hover{
+	color: $accent;
+}
+.footer__item-1 img{
+	padding-bottom: 0.9em;
+}
+.form__input-flex{
+padding: 12px 50px;
+}
