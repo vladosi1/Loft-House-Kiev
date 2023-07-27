@@ -10,12 +10,26 @@
 	background-position: center;
 	padding-top: 30px;
 	padding-bottom: 74px;
+	
+	@media screen and (max-width: 999px) {
+		min-height: unset;
+		row-gap: 100px;
+	}
 
 }
 .header__top-row{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	@media screen and (max-width: 999px) {
+		min-height: auto;
+		justify-content: space-around;
+		row-gap: 50px;
+	}
+}
+.header__footer-social img {
+	width: auto;
 }
 .nav ul{
 	display: flex;
@@ -39,6 +53,11 @@
 	font-family: $font-accent;
 	position: relative;
 	padding-bottom: 121px;
+
+	@media screen and (max-width: 999px) {
+		font-size: 38px;
+		
+	}
 }
 .header__title-icon{
 	position: absolute;
@@ -109,8 +128,33 @@
 	transform: scaleX(1);
 	transform-origin: bottom left;
  }
- 
+ .header__nav{
+	@media screen and (max-width: 999px) {
+		display: none;
+		
+	}
+
+ }
+ .header__nav-btn{
+	display: none;
+
+
+	@media screen and (max-width: 999px) {
+		display: block;
+		
+	}
+ }
 
 
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
+* {
+  margin: 0;
+  padding: 0;
+}
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
+* {
+  margin: 0;
+  padding: 0;
+}

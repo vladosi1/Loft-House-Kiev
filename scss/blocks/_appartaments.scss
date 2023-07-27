@@ -11,6 +11,12 @@
 	font-size: 400px;
 	opacity: 0.04;
 	font-family: $font-accent;
+
+	@media screen and (max-width: 999px) {
+	display: none;
+
+	
+}
 }
 
 

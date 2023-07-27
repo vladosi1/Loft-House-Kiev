@@ -1,9 +1,11 @@
 .card {
 display: block;
+
 }
 .appartments__cards {
 	display: inline-block;
 	position: relative;
+
 
 	&::before{
 		content: "";
@@ -57,5 +59,20 @@ display: block;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	gap: 30px;
-	// grid-template-columns: repeat(auto-fit, min-max(290px, 1fr));
+
+	@media screen and (max-width: 999px) {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		gap: 100px;
+
+	
+}
+	
+}
+.title-2{
+	@media screen and (max-width: 999px) {
+	font-size: 38px;
+
+	
+}	
 }

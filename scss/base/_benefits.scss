@@ -13,6 +13,11 @@
 	font-size: 400px;
 	opacity: 0.04;
 	font-family: $font-accent;
+	font-size: 300px;
+
+	@media screen and (max-width: 999px) {
+	display: none;
+	}
 
 }
 
@@ -22,6 +27,16 @@
 	justify-content: center;
 	align-items: center;
 	gap: 70px;
+
+
+	@media screen and (max-width: 999px) {
+		justify-content: center;
+		gap: 30px;
+		margin-left: 30px;
+		width: 635px;
+	}
+
+
 }
 
 .benefits__item {

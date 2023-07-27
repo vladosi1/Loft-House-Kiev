@@ -12,7 +12,22 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 30px;
+
+	@media screen and (max-width: 999px) {
+		display: block;
+		width: 700px;
+	
+		
+	}
 }
+.cta__text{
+	@media screen and (max-width: 999px) {
+	margin-bottom: 1.5em;
+	
+		
+	}
+}
+
 .form {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -56,3 +71,4 @@
 		background-color: saturate($accent, 20%);
 	}
 }
+

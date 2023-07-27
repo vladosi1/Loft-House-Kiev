@@ -8,15 +8,16 @@
 	position: absolute;
 	
 	top: 10%;
-	left: calc(50% + 300px);
+	left: calc(50% + 320px);
 	line-height: 1.15;
 	font-size: 400px;
 	opacity: 0.04;
 	font-family: $font-accent;
 	z-index: 1;
+	font-size: 270px;
+
 }
-.container {
-}
+
 .video__link {
 	position: relative;
 	display: inline-block;

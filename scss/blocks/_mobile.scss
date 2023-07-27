@@ -1,0 +1,241 @@
+.menu-btn {
+	z-index: 12;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	overflow: hidden;
+ }
+ .menu-btn {
+	padding: 25px 0px;
+ }
+ .active ul {
+	padding-top: 30px;
+ }
+ .active a:hover {
+	opacity: 0.8;
+ }
+ .menu-btn span {
+	z-index: 10;
+	width: 30px;
+	height: 3px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background-color: #ffffff;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+ }
+ .menu-btn span:nth-of-type(2) {
+	top: calc(50% - 7px);
+ }
+ .menu-btn span:nth-of-type(3) {
+	top: calc(50% + 7px);
+ }
+ /* Меняем гамбургер иконку, когда меню открыто */
+ .menu-btn.active span:nth-of-type(1) {
+	display: none;
+	z-index: 11;
+ }
+ .menu-btn.active span:nth-of-type(2) {
+	top: 50%;
+	-webkit-transform: translate(-50%, 0%) rotate(45deg);
+	transform: translate(-50%, 0%) rotate(45deg);
+	z-index: 11;
+ }
+ .menu-btn.active span:nth-of-type(3) {
+	top: 50%;
+	-webkit-transform: translate(-50%, 0%) rotate(-45deg);
+	transform: translate(-50%, 0%) rotate(-45deg);
+	z-index: 11;
+ }
+ /* Меню, которое будет появляться */
+ .menu {
+	font-family: $font-accent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 61vh;
+	padding: 40px 20px;
+	background: $dark;
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-100%);
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+	transition: transform 0.5s, -webkit-transform 0.5s;
+	opacity: 0.99;
+ }
+ .menu.active {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+ }
+ .menu li {
+	list-style-type: none;
+ }
+ .menu li {
+	color: #F6F3F3;
+	padding-bottom: 20px;
+ }
+
+
+ .logo__mobile{
+	position: absolute;
+	left: 20px;
+	top: 20px;
+ }
+
+ .menu li{
+	text-transform: uppercase;
+ }
+
+
+ .none{
+	display: none;
+}
+
+@media screen and (max-width: 999px) {
+	.container{
+		width: 900px;
+	}
+
+}
+
+@media screen and (max-width: 840px) {
+	.container{
+		width: 700px;
+	}
+	.benefits__item-text{
+		font-size: 15px;
+	}
+	.footer__item-3{
+		display: none;
+	}
+	.video::after{
+		display: none;
+		}
+}
+@media screen and (max-width: 700px) {
+	.benefits__row{
+		flex-direction: column;
+	}
+	.benefits{
+		padding: 50px 0;
+	}
+
+
+}
+
+@media screen and (max-width: 560px) {
+	.container{
+		width: 320px;
+	}
+	.logo__mobile {
+		width: 100px;
+
+		
+	}
+	.header{
+		padding-bottom: 25px;
+	}
+	.header__top-row {
+		justify-content: space-between;
+	}
+	.header__footer-social img{
+		margin-right: 10px;
+	}
+	.header__title-icon {
+		display: none;
+	}
+	.header__title h1 {
+		font-size: 27px;
+		padding-bottom: 25px;
+	}
+	.header__footer{
+		flex-direction: column;
+	}
+	.info, .tel{
+		margin-right: 0;
+		font-size: 16px;
+		font-family: $font-secondary;
+		margin-bottom: 15px;
+	}
+	.info::before {
+		right: 220px;
+}
+.benefits__row{
+	width: auto;
+	align-items: center;
+	justify-content: flex-start;
+	margin-left: 0;
+}
+.benefits__item-img{
+	margin: 0px 0px 25px 0px;
+}
+.cards__group{
+	gap: 50px;
+
+}
+.title-2 {
+	font-size: 33px;
+	margin-bottom: 40px;
+}
+.card__title{
+	font-size: 18px;
+}
+.cta, .map, .footer{
+	padding: 50px 0;
+}
+.cta__text{
+	font-size: 14px;
+}
+.cta__wrapper, .cta__form{
+	width: auto;
+	display: flex;
+	flex-direction: column;
+}
+.cta__form > p{
+	order: 4;
+}
+.video__icon{
+	width: 80px;
+	top: 90px;
+	left: 110px;
+}
+.footer__box{
+	flex-wrap: nowrap;
+}
+.footer__box{
+	display: flex;
+	flex-direction: column;
+}
+.footer__flex{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 35px;
+}
+
+.footer__item li{
+	font-size: 14px;
+}
+.footer__item-2{
+display: none;
+}
+.footer__text{
+	margin-bottom: 20px;
+}
+iframe.map__main{
+	padding-bottom: 15px;
+}
+
+
+
+
+}
