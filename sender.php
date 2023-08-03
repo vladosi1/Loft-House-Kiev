@@ -10,7 +10,6 @@
 	
 	$msg="
     Имя: $name /n
-    Фамилия: $surname /n
     Телефон: $phone /n
     Почта: $email /n
     Текст: $text"; 	
