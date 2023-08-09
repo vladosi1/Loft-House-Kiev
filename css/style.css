@@ -925,6 +925,11 @@ iframe.map__main {
   .header {
     padding-bottom: 25px;
   }
+  .ask{
+    padding-top: 0px;
+    padding-bottom: 25px;
+  }
+    
   .header__top-row {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
